@@ -3,12 +3,12 @@
 # Program Menghitung Nilai Mahasiswa
 Pada praktek kali ini, saya mencoba membuat program menentukan nilai mahasiswa dengan menggunakan list.
 - Source Code dan Penjelasan
- print("==================================================================")
- print("|                 PROGRAM INPUT NILAI MAHASISWA                  |")
- print("==================================================================")
+    print("==================================================================")
+    print("|                 PROGRAM INPUT NILAI MAHASISWA                  |")
+    print("==================================================================")
 
- nilai = []                                                            ## Membuat list nilai kosong
-	perulangan = True                                                     ## Membuat variable perulangan "true" untuk logika looping
+    nilai = []                                                            ## Membuat list nilai kosong
+    perulangan = True                                                     ## Membuat variable perulangan "true" untuk logika looping
 
 	while perulangan:                                                     ## Looping
     nama = input("Masukkan Nama: ")                                   ## Membuat variable nama untuk list dan menginputkan datanya
@@ -22,12 +22,12 @@ Pada praktek kali ini, saya mencoba membuat program menentukan nilai mahasiswa d
     if (input("Tambah data (y/t)? ") == 't'):                         ## Jika kita tidak menambahkan data ketik "t" untuk mengakhiri
         perulangan = False                                            ## Looping selesai
 
- print("\n                      DAFTAR NILAI MAHASISWA                    ")
- print("==================================================================")
- print("| No |     Nama     |    NIM    | Tugas |  UTS  |  UAS  |  Akhir |")
- print("==================================================================")
- i = 0                                                                         ## looping dimulai dari angka nol untuk mengurutkan data
- for item in nilai:                                                            ## looping dari list nilai
+    print("\n                      DAFTAR NILAI MAHASISWA                    ")
+    print("==================================================================")
+    print("| No |     Nama     |    NIM    | Tugas |  UTS  |  UAS  |  Akhir |")
+    print("==================================================================")
+    i = 0                                                                         ## looping dimulai dari angka nol untuk mengurutkan data
+    for item in nilai:                                                            ## looping dari list nilai
     i += 1
     print("| {no:2d} | {nama:12s} | {nim:9s} | {nilaiTugas:5d} | {nilaiUts:5d} | {nilaiUas:5d} | {nilaiAkhir:6.2f} |"           ## Mengatur posisi tabel
           .format(no=i, nama=item[0], nim=item[1], nilaiTugas=item[2], nilaiUts=item[3], nilaiUas=item[4], nilaiAkhir=item[5])) ## Mengambil list yg sudah diinputkan didalam list nilai.
